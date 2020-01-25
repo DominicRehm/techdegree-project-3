@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <title>Signup for Newsletter</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <div class="wrapper">
+
+            <div class="banner">
+                <h2 id="page-name">The code review</h2>
+            </div>
+            <div class="background-container">
+                <header class="main-header container">
+                    <h2>Signup for our newsletter</h2>
+                    <p>Get the latest news on how your code is doing right in your inbox</p>
+                </header>
+
+                <hr class="first-hr container">
+                <hr class="second-hr container">
+                <main class="main-form">
+                    <div class="container">
+                        <form action="index.html" method="post">
+                            <fieldset class="fieldset-one">
+                                <legend>Contact Information</legend>
+                                <div class="flex-row">
+                                    <label for="name">Full Name</label><input class="input-field" type="text" id="name" name="user_name" placeholder="Requiered" required>
+                                </div>
+                                <div class="flex-row">
+                                    <label for="mail">Email Adress</label><input class="input-field" type="email" id="mail" name="user_email" placeholder="Requiered" required>
+                                </div>
+                                <div class="flex-row">
+                                    <label for="phone">Phone Number</label><input class="input-field" type="tel" id="phone" name="user_phone" placeholder=" e.g. 555-555-555">
+                                </div>
+                                <div class="flex-row">
+                                    <label for="street">Street Adress</label><input class="input-field" type="text" id="street" name="user_street" placeholder="e.g. Towerstreet 5">
+                                </div>
+                                <div class="flex-row">
+                                    <label for="city">City</label><input class="input-field" type="text" id="city" name="user_city" placeholder="e.g. New-York">
+                                </div>
+                                <div class="flex-row">
+                                    <label for="state">State</label>
+                                    <select id="state" name="user_state">
+                                        <option value="" disabled selected>Choose State</option>
+                                        <option value="alabama">Alabama</option>
+                                        <option value="alaska">Alaska</option>
+                                        <option value="arizona">Arizona</option>
+                                        <option value="arkansas">Arkansas</option>
+                                        <option value="california">California</option>
+                                        <option value="colorado">Colorado</option>
+                                        <option value="connecticut">Connecticut</option>
+                                        <option value="delaware">Delaware</option>
+                                        <option value="florida">Florida</option>
+                                        <option value="georgia">Georgia</option>
+                                        <option value="hawaii">Hawaii</option>
+                                        <option value="idaho">Idaho</option>
+                                    </select>
+                                </div>
+                                <div class="flex-row flex-zip">
+                                    <label for="zip">Zip Code</label><input class="input-field" type="number" id="zip" name="user_zip" placeholder="e.g. 18284">
+                                </div> 
+                            </fieldset>
+
+                            <fieldset class="fieldset-two">
+                                <legend>Newsletter</legend>
+                                <label>Select the newsletters you would like to recieve</label>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="html" value="html" name="html_news">
+                                    <label for="html">HTML News</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="css" value="css" name="css_news">
+                                    <label for="css">CSS News</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="javascript" value="javascript" name="javascript_news">
+                                    <label for="javascript">Javascript News</label>
+                            </div>
+                            <label>Newsletter format</label>
+                            <div class="radio">
+                                <input type="radio" id="html_format" value="html" name="newsletter_format">
+                                <label for="html_format">HTML</label>
+                            </div>
+                            <div class="radio">
+                                <input type="radio" id="plain_text_format" value="plain_text" name="newsletter_format">
+                                <label for="plain_text_format">Plain text</label>
+                            </div>
+                                <label for="other_topics">Other topics you'd like to hear about</label>
+                                <textarea name="other_topics" id="other_topics" rows="5"></textarea>
+                                <button type="submit">Sign Up</button>
+                            </fieldset>
+                        </form>
+                    </div>
+                </main>
+                <footer class="main-footer">
+                    <p>&copy; 2020 by Dominic Rehm</p>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>

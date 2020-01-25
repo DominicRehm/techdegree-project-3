@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h2,
+legend {
+    font-size: 1.25em;
+    color: #0B4C5F;
+}
+
+.background-container {
+    background: linear-gradient(0deg, rgba(220,254,255,1) 19%, rgba(223,255,228,1) 100%);
+}
+
+/* #####################################
+Banner-Styling
+######################################## */
+
+.banner {
+    text-align: center;
+    height: 80px;
+    background: #0B4C5F;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-name {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* #####################################
+Header-Styling
+######################################## */
+
+.main-header {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.main-header p {
+    margin-top: 15px;
+    font-size: .9em;
+    color: #848484;
+}
+
+.first-hr {
+    margin-top: 40px;
+    border-bottom: 4px solid #000;
+}
+
+.second-hr {
+    margin-top: 3px;
+    border-bottom: 2px solid #000;
+}
+
+/* #####################################
+General Form-Styling
+######################################## */
+
+.main-form {
+    padding-top: 30px;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+}
+
+legend {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+label {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #848484;
+    font-size: .875rem;
+    display: inline-block;
+}
+
+.input-field,
+#state,
+textarea {
+    width: 100%;
+    border: 0;
+    background: #E6E6E6;
+    border-radius: 5px;
+}
+
+/* #####################################
+Form-Styling Part 1
+######################################## */
+
+.fieldset-one {
+    border-bottom: 2px solid black;
+    margin-bottom: 25px;
+}
+
+.flex-row label {
+    display: block;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder {
+    text-align: right;
+    padding-right: 10px;
+    font-size: 0.8125rem;
+    color: #A4A4A4;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+#state {
+    height: 50px;
+    padding-left: 20px;
+    text-align: left;
+    transition: all 1s ease-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+#state:focus {
+    background-color: #fff;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    color: #000;
+
+}
+
+#zip {
+    width: 50%;
+    margin-bottom: 25px;
+}
+
+/* #####################################
+Form-Styling Part 2
+######################################## */
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="radio"]:checked + label {
+    font-weight: bold;
+    color: #0B615E;
+}
+
+.checkbox label,
+.radio label {
+    margin-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+textarea {
+    padding-left: 20px;
+    padding-top: 15px;
+    transition: all 1s ease-in;
+}
+
+textarea:focus {
+    background-color: #fff;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    color: #000;
+}
+
+button[type="submit"] {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: none;
+    background: #3DA7C2;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 500ms ease-out;
+}
+
+/* #####################################
+Footer-Styling
+######################################## */
+
+.main-footer {
+    font-size: 0.875rem;
+    text-align: center;
+    color: #848484;
+    padding-bottom: 200px;
+}
+
+/* #####################################
+Desktop-View 768px
+######################################## */
+
+@media (min-width: 768px) {
+    
+    .container {
+        width: 55%;
+    }
+
+    .main-header {
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .flex-row {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .flex-row label {
+        font-size: 14px;
+        width: 40%;
+        margin-top: 20px;
+    }
+
+    .flex-row input,
+    #state {
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .flex-zip {
+        justify-content: flex-start;
+        width: 71%;
+        margin-top: 0px;
+    }
+
+    #zip {
+        width: 150px;
+        margin-bottom: 40px;
+    }
+
+    .input-field,
+    #state,
+    textarea {
+    width: 100%;
+    border: 0;
+    background: #E6E6E6;
+    border-radius: 5px;
+    font-size: .8rem;
+    }   
+
+    button[type="submit"]:hover {
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        color: #000;
+    }
+
+
+}
